@@ -29,8 +29,8 @@ var (
 	valueTypes   = []string{}
 	querySources = []string{}
 	project      = flag.String("project", "", "GCP project name.")
-	port         = flag.String("port", "9050", "Exporter port.")
-	refresh      = flag.Duration("refresh", 5*time.Minute, "Interval between updating metrics.")
+	port         = flag.String("port", "16050", "Exporter port.")
+	refresh      = flag.Duration("refresh", 720*time.Minute, "Interval between updating metrics.")
 )
 
 func init() {
